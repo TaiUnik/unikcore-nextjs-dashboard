@@ -8,7 +8,11 @@ import CustomTable from "@/components/shared/CustomTable";
 function CompanyPage() {
   return (
     <div>
-      <PreListingComponent title="Company Page" isList={true} />
+      <PreListingComponent
+        title="Company Page"
+        isList={true}
+        href="/companies/create"
+      />
       <CustomTable data={companies} />
     </div>
   );

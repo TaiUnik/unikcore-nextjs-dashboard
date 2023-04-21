@@ -9,7 +9,7 @@ import CustomHeader from "@/components/shared/CustomHeader";
 import CustomButton from "@/components/shared/CustomButton";
 import InternalSearch from "@/components/shared/InternalSearch";
 
-function PreListingComponent({ title, isList }) {
+function PreListingComponent({ title, isList, href }) {
   return (
     <>
       <div className="flex items-center justify-between border border-b-zinc-200 p-6">
@@ -18,7 +18,7 @@ function PreListingComponent({ title, isList }) {
         </div>
         <div className="flex items-center justify-between">
           {isList ? (
-            <CustomButton text="New" icon={<PlusOutlined />} />
+            <CustomButton text="New" icon={<PlusOutlined />} href={href} />
           ) : (
             <div className="flex gap-4">
               <CustomButton text="Save" icon={<CheckOutlined />} />
