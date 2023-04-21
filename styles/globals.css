@@ -2,11 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__next {
+  height: 100% !important;
+}
+
+/* override ant design css */
 .ant-layout-sider-trigger {
-    background: inherit !important;
-    border-right: 1px solid #e5e7eb;
+  background: inherit !important;
+  border-right: 1px solid #e5e7eb;
 }
 
 .ant-layout-sider-trigger span {
-    color: black;
+  color: black;
 }

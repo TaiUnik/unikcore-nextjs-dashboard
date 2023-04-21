@@ -1,8 +1,11 @@
 import React from "react";
-import { useRouter } from "next/router";
 
 function CustomHeader({ title }) {
-    return <h3 className="p-6 text-3xl">{title}</h3>;
+  return (
+    <>
+      <h3 className="text-2xl text-left">{title}</h3>
+    </>
+  );
 }
 
 export default CustomHeader;
